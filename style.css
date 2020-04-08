@@ -1,0 +1,296 @@
+:root {
+	--dark-violet: hsl(256, 26%, 20%);
+	--grayish-blue: hsl(216, 30%, 68%);
+	--very-dark-violet: hsl(270, 9%, 17%);
+	--dark-grayish-violet: hsl(273, 4%, 51%);
+	--very-light-gray: hsl(0, 0%, 98%);
+}
+
+/* General configuration */
+body {
+	font-family: 'Karla', sans-serif;
+}
+
+h1,
+h2 {
+	font-family: 'DM Serif Display', serif;
+}
+
+.primary-title {
+	font-size: 6.3rem;
+	color: white;
+	line-height: 1;
+}
+
+.secondary-title {
+	font-size: 6.3rem;
+	color: var(--very-dark-violet);
+}
+
+.primary-button {
+	font-size: inherit;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0.8em 2em;
+	color: white;
+	background-color: transparent;
+	border: 2px solid white;
+}
+
+.primary-button:hover {
+	color: var(--dark-violet);
+	background-color: white;
+}
+
+.secondary-button {
+	font-size: inherit;
+	font-weight: inherit;
+	text-transform: inherit;
+	color: var(--very-dark-violet);
+	background-color: #fff;
+	padding: 0.8em 2em;
+	border: 2px solid var(--very-dark-violet);
+}
+
+.secondary-button:hover {
+	color: #fff;
+	background-color: var(--very-dark-violet);
+}
+
+.border-top {
+	display: block;
+	width: 15em;
+	margin-bottom: 5em;
+	border-top: 1px solid white;
+}
+/* General configuration */
+
+
+
+/* Nav header configuration */
+.nav-header {
+	padding: 1.5em 10em;
+	color: var(--dark-grayish-violet);
+	font-weight: bold;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.links {
+	font-size: 0.85rem;
+}
+
+.nav-header a {
+	margin: 0 1.5em;
+}
+
+.nav-header a:hover {
+	color: var(--very-dark-violet);
+}
+/* Nav header configuration */
+
+
+
+/* Introductory section configuration */
+.introductory-section {
+	padding: 8em 10em;
+	background-color: var(--dark-violet);
+	position: relative;
+	display: flex;
+}
+
+.introductory-section > * {
+	flex-basis: 50%;
+}
+
+.introductory-text {
+	margin-bottom: 5em;
+}
+
+.introductory-text .border-top {
+	border-top-color: var(--very-light-gray);
+}
+
+.introductory-text p {
+	font-size: 1.4rem;
+	line-height: 1.5;
+	padding-right: 1em;
+	margin: 2em 0;
+	color: var(--very-light-gray);
+}
+
+.introductory-background {
+	position: relative;
+}
+
+.introductory-background img {
+	width: 100%;
+	position: absolute;
+}
+
+.intro-bg-left {
+	width: 12%;
+	height: 100%;
+	position: absolute;
+	bottom: -75%;
+	left: 0;
+	background-image: url("./images/bg-pattern-intro-left-desktop.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.intro-bg-right {
+	width: 25%;
+	height: 85%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-image: url("./images/bg-pattern-intro-right-desktop.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* Introductory section configuration */
+
+
+
+/* Advantages section configuration */
+.advantages-section {
+	padding: 25em 10em 5em;
+}
+
+.advantages-section .border-top {
+	border-top-color: var(--dark-grayish-violet);
+}
+
+.advantages-section h1 {
+	margin-bottom: 1em;
+}
+
+.advantages-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.advantages-container > * {
+	flex-basis: 30%;
+}
+
+.advantage-card img {
+	margin-bottom: 2em;
+}
+
+.title-advantage-card {
+	margin-bottom: 0.8em;
+	font-weight: normal;
+}
+
+.subtitle-advantage-card {
+	color: var(--dark-grayish-violet);
+	font-size: 1.35rem;
+	line-height: 1.5;
+}
+/* Advantages section configuration */
+
+
+
+/* Work section configuration */
+.work-section {
+	padding: 5em 10em;
+	margin-bottom: 7em;
+}
+
+.work-container {
+	padding: 5em;
+	background-color: var(--dark-violet);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-image: url("./images/bg-pattern-how-we-work-desktop.svg");
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-size: contain;
+}
+
+.work-container h1 {
+	flex-basis: 65%;
+}
+
+.work-container button {
+	height: max-content;
+}
+/* Work section configuration */
+
+
+
+/* Footer configuration */
+footer {
+	padding: 5em 10em;
+	background-color: var(--very-light-gray);
+	background-image: url("./images/bg-pattern-footer-desktop.svg");
+	background-repeat: no-repeat;
+	background-size: 40%;
+	background-position: -5% -30%;
+}
+
+.footer-header {
+	display: flex;
+	padding-bottom: 2em;
+	margin-bottom: 3em;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	justify-content: space-between;
+}
+
+.footer-header > img {
+	width: 7em;
+	height: 50%;
+}
+
+.social a {
+	margin-left: 1em;
+}
+
+.social img:hover {
+	filter: brightness(0);
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-title {
+	color: var(--dark-grayish-violet);
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 2em;
+}
+
+.footer-card a {
+	text-transform: uppercase;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 1em;
+}
+
+.footer-card a:hover {
+	text-decoration: underline
+}
+/* Footer configuration */
+
+
+.attribution {
+	background-color: var(--very-light-gray);
+	text-align: center;
+	color: var(--dark-grayish-violet);
+}
+
+.attribution a {
+	font-weight: bold;
+	color: var(--dark-violet);
+}
+
+.attribution a:hover {
+	text-decoration: underline;
+}
