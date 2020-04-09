@@ -137,7 +137,6 @@ h2 {
 	background-repeat: no-repeat;
 	background-position-y: bottom;
 	background-size: contain;
-	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding-top: 4em;
@@ -147,6 +146,10 @@ h2 {
 .menu-mobile a {
 	margin-bottom: 1.5em;
 	text-transform: uppercase;
+}
+
+.menu-mobile a:hover {
+	color: var(--grayish-blue);
 }
 
 .menu-mobile button {
